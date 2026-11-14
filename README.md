@@ -262,7 +262,7 @@ The following checks were completed successfully:
 | Prettier formatting | Passed |
 | ESLint | Passed |
 | Jest test suites | 10 passed |
-| Jest tests | 19 passed |
+| Jest tests | 20 passed |
 | Husky pre-commit | Working |
 | GitHub Actions | Passed |
 | Docker production build | Successful |
