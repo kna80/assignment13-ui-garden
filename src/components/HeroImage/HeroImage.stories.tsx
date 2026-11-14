@@ -1,34 +1,34 @@
-import type { Meta, StoryObj } from "@storybook/react-webpack5";
-import HeroImage from "./HeroImage";
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import HeroImage from './HeroImage';
 
 const meta = {
-  title: "Components/HeroImage",
+  title: 'Components/HeroImage',
   component: HeroImage,
   parameters: {
-    layout: "fullscreen",
+    layout: 'fullscreen',
   },
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     title: {
-      control: "text",
+      control: 'text',
     },
     subtitle: {
-      control: "text",
+      control: 'text',
     },
     src: {
-      control: "text",
+      control: 'text',
     },
     alt: {
-      control: "text",
+      control: 'text',
     },
     backgroundColor: {
-      control: "color",
+      control: 'color',
     },
     textColor: {
-      control: "color",
+      control: 'color',
     },
     disabled: {
-      control: "boolean",
+      control: 'boolean',
     },
   },
 } satisfies Meta<typeof HeroImage>;
@@ -39,24 +39,24 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    src: "https://picsum.photos/1200/500",
-    alt: "Beautiful landscape",
-    title: "Welcome to UI Garden",
-    subtitle: "Explore our reusable React components",
-    backgroundColor: "lightblue",
-    textColor: "black",
+    src: 'https://picsum.photos/1200/500',
+    alt: 'Beautiful landscape',
+    title: 'Welcome to UI Garden',
+    subtitle: 'Explore our reusable React components',
+    backgroundColor: 'lightblue',
+    textColor: 'black',
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    src: "https://picsum.photos/1200/500",
-    alt: "Disabled landscape",
-    title: "Disabled Hero Image",
-    subtitle: "This component is disabled",
-    backgroundColor: "lightblue",
-    textColor: "black",
+    src: 'https://picsum.photos/1200/500',
+    alt: 'Disabled landscape',
+    title: 'Disabled Hero Image',
+    subtitle: 'This component is disabled',
+    backgroundColor: 'lightblue',
+    textColor: 'black',
     disabled: true,
   },
 };

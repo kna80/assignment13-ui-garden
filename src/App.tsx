@@ -1,15 +1,11 @@
-import React from "react";
-
+import React from 'react';
 
 function App() {
   return (
-    <div style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
+    <div style={{ padding: '40px', fontFamily: 'Arial, sans-serif' }}>
       <h1>🌸 UI Garden — Web Component Library</h1>
 
-      <p>
-        Welcome to my React, TypeScript and Styled Components
-        component library!
-      </p>
+      <p>Welcome to my React, TypeScript and Styled Components component library!</p>
 
       <h2>Our Components</h2>
 
@@ -25,10 +21,7 @@ function App() {
         <li>Card</li>
       </ul>
 
-      <p>
-        Explore all components and their default and disabled
-        states in Storybook.
-      </p>
+      <p>Explore all components and their default and disabled states in Storybook.</p>
     </div>
   );
 }

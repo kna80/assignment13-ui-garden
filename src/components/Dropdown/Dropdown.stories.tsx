@@ -1,26 +1,26 @@
-import type { Meta, StoryObj } from "@storybook/react-webpack5";
-import { fn } from "storybook/test";
-import Dropdown from "./Dropdown";
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import { fn } from 'storybook/test';
+import Dropdown from './Dropdown';
 
 const meta = {
-  title: "Components/Dropdown",
+  title: 'Components/Dropdown',
   component: Dropdown,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
   },
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     label: {
-      control: "text",
+      control: 'text',
     },
     backgroundColor: {
-      control: "color",
+      control: 'color',
     },
     textColor: {
-      control: "color",
+      control: 'color',
     },
     disabled: {
-      control: "boolean",
+      control: 'boolean',
     },
   },
   args: {
@@ -34,20 +34,20 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    label: "Choose a Course",
-    options: ["React", "TypeScript", "JavaScript"],
-    backgroundColor: "white",
-    textColor: "black",
+    label: 'Choose a Course',
+    options: ['React', 'TypeScript', 'JavaScript'],
+    backgroundColor: 'white',
+    textColor: 'black',
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    label: "Choose a Course",
-    options: ["React", "TypeScript", "JavaScript"],
-    backgroundColor: "white",
-    textColor: "black",
+    label: 'Choose a Course',
+    options: ['React', 'TypeScript', 'JavaScript'],
+    backgroundColor: 'white',
+    textColor: 'black',
     disabled: true,
   },
 };

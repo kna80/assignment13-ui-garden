@@ -1,20 +1,18 @@
-import React from "react";
-import styled from "styled-components";
-import type { LabelProps } from "./Label.types";
+import React from 'react';
+import styled from 'styled-components';
+import type { LabelProps } from './Label.types';
 
 const StyledLabel = styled.label<{
   $backgroundColor: string;
   $disabled: boolean;
 }>`
   display: inline-block;
-  background-color: ${(props) =>
-    props.$disabled ? "grey" : props.$backgroundColor};
+  background-color: ${(props) => (props.$disabled ? 'grey' : props.$backgroundColor)};
   color: white;
   padding: 10px 20px;
   border-radius: 6px;
   font-size: 16px;
-  cursor: ${(props) =>
-    props.$disabled ? "not-allowed" : "pointer"};
+  cursor: ${(props) => (props.$disabled ? 'not-allowed' : 'pointer')};
   transition: 0.3s;
 
   &:hover {
@@ -29,7 +27,7 @@ const StyledLabel = styled.label<{
 
 const Label: React.FC<LabelProps> = ({
   text,
-  backgroundColor = "blue",
+  backgroundColor = 'blue',
   disabled = false,
   onClick,
 }) => {

@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import type { RadioButtonProps } from "./RadioButton.types";
+import React from 'react';
+import styled from 'styled-components';
+import type { RadioButtonProps } from './RadioButton.types';
 
 const RadioContainer = styled.label<{
   $backgroundColor: string;
@@ -13,14 +13,11 @@ const RadioContainer = styled.label<{
   padding: 12px 18px;
   border-radius: 6px;
 
-  background-color: ${(props) =>
-    props.$disabled ? "grey" : props.$backgroundColor};
+  background-color: ${(props) => (props.$disabled ? 'grey' : props.$backgroundColor)};
 
-  color: ${(props) =>
-    props.$disabled ? "white" : props.$textColor};
+  color: ${(props) => (props.$disabled ? 'white' : props.$textColor)};
 
-  cursor: ${(props) =>
-    props.$disabled ? "not-allowed" : "pointer"};
+  cursor: ${(props) => (props.$disabled ? 'not-allowed' : 'pointer')};
 
   opacity: ${(props) => (props.$disabled ? 0.6 : 1)};
 
@@ -40,8 +37,8 @@ const RadioButton: React.FC<RadioButtonProps> = ({
   name,
   value,
   checked,
-  backgroundColor = "lightblue",
-  textColor = "black",
+  backgroundColor = 'lightblue',
+  textColor = 'black',
   disabled = false,
   onChange,
 }) => {

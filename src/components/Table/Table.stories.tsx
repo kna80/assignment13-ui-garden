@@ -1,25 +1,25 @@
-import type { Meta, StoryObj } from "@storybook/react-webpack5";
-import Table from "./Table";
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import Table from './Table';
 
 const meta = {
-  title: "Components/Table",
+  title: 'Components/Table',
   component: Table,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
   },
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     backgroundColor: {
-      control: "color",
+      control: 'color',
     },
     textColor: {
-      control: "color",
+      control: 'color',
     },
     disabled: {
-      control: "boolean",
+      control: 'boolean',
     },
     footer: {
-      control: "text",
+      control: 'text',
     },
   },
 } satisfies Meta<typeof Table>;
@@ -30,30 +30,30 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    headers: ["ID", "Name", "Course"],
+    headers: ['ID', 'Name', 'Course'],
     rows: [
-      ["1", "John", "React"],
-      ["2", "Sarah", "TypeScript"],
-      ["3", "Alex", "JavaScript"],
+      ['1', 'John', 'React'],
+      ['2', 'Sarah', 'TypeScript'],
+      ['3', 'Alex', 'JavaScript'],
     ],
-    footer: "Total Students: 3",
-    backgroundColor: "white",
-    textColor: "black",
+    footer: 'Total Students: 3',
+    backgroundColor: 'white',
+    textColor: 'black',
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    headers: ["ID", "Name", "Course"],
+    headers: ['ID', 'Name', 'Course'],
     rows: [
-      ["1", "John", "React"],
-      ["2", "Sarah", "TypeScript"],
-      ["3", "Alex", "JavaScript"],
+      ['1', 'John', 'React'],
+      ['2', 'Sarah', 'TypeScript'],
+      ['3', 'Alex', 'JavaScript'],
     ],
-    footer: "Table Disabled",
-    backgroundColor: "white",
-    textColor: "black",
+    footer: 'Table Disabled',
+    backgroundColor: 'white',
+    textColor: 'black',
     disabled: true,
   },
 };

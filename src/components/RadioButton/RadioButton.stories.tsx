@@ -1,29 +1,29 @@
-import type { Meta, StoryObj } from "@storybook/react-webpack5";
-import { fn } from "storybook/test";
-import RadioButton from "./RadioButton";
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import { fn } from 'storybook/test';
+import RadioButton from './RadioButton';
 
 const meta = {
-  title: "Components/RadioButton",
+  title: 'Components/RadioButton',
   component: RadioButton,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
   },
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     label: {
-      control: "text",
+      control: 'text',
     },
     backgroundColor: {
-      control: "color",
+      control: 'color',
     },
     textColor: {
-      control: "color",
+      control: 'color',
     },
     disabled: {
-      control: "boolean",
+      control: 'boolean',
     },
     checked: {
-      control: "boolean",
+      control: 'boolean',
     },
   },
   args: {
@@ -37,22 +37,22 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    label: "Select React",
-    name: "course",
-    value: "react",
-    backgroundColor: "lightblue",
-    textColor: "black",
+    label: 'Select React',
+    name: 'course',
+    value: 'react',
+    backgroundColor: 'lightblue',
+    textColor: 'black',
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    label: "Disabled Radio",
-    name: "course",
-    value: "react",
-    backgroundColor: "lightblue",
-    textColor: "black",
+    label: 'Disabled Radio',
+    name: 'course',
+    value: 'react',
+    backgroundColor: 'lightblue',
+    textColor: 'black',
     disabled: true,
   },
 };

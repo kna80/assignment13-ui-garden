@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import type { HeroImageProps } from "./HeroImage.types";
+import React from 'react';
+import styled from 'styled-components';
+import type { HeroImageProps } from './HeroImage.types';
 
 const HeroContainer = styled.section<{
   $backgroundColor: string;
@@ -21,14 +21,11 @@ const HeroContainer = styled.section<{
   align-items: center;
   justify-content: center;
 
-  background-color: ${(props) =>
-    props.$disabled ? "grey" : props.$backgroundColor};
+  background-color: ${(props) => (props.$disabled ? 'grey' : props.$backgroundColor)};
 
-  color: ${(props) =>
-    props.$disabled ? "white" : props.$textColor};
+  color: ${(props) => (props.$disabled ? 'white' : props.$textColor)};
 
-  cursor: ${(props) =>
-    props.$disabled ? "not-allowed" : "default"};
+  cursor: ${(props) => (props.$disabled ? 'not-allowed' : 'default')};
 
   opacity: ${(props) => (props.$disabled ? 0.6 : 1)};
 
@@ -76,9 +73,9 @@ const HeroImage: React.FC<HeroImageProps> = ({
   src,
   alt,
   title,
-  subtitle = "",
-  backgroundColor = "lightblue",
-  textColor = "black",
+  subtitle = '',
+  backgroundColor = 'lightblue',
+  textColor = 'black',
   disabled = false,
 }) => {
   return (

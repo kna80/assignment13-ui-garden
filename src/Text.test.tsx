@@ -1,1 +1,1 @@
-import "./components/Text/Text.tests";
+import './components/Text/Text.tests';

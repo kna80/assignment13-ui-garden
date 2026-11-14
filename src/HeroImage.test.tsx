@@ -1,1 +1,1 @@
-import "./components/HeroImage/HeroImage.tests";
+import './components/HeroImage/HeroImage.tests';

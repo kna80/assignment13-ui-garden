@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import type { TextProps } from "./Text.types";
+import React from 'react';
+import styled from 'styled-components';
+import type { TextProps } from './Text.types';
 
 const StyledText = styled.p<{
   $color: string;
@@ -9,16 +9,13 @@ const StyledText = styled.p<{
   $disabled: boolean;
 }>`
   display: block;
-  background-color: ${(props) =>
-    props.$disabled ? "grey" : props.$backgroundColor};
-  color: ${(props) =>
-    props.$disabled ? "white" : props.$color};
+  background-color: ${(props) => (props.$disabled ? 'grey' : props.$backgroundColor)};
+  color: ${(props) => (props.$disabled ? 'white' : props.$color)};
   font-size: ${(props) => props.$fontSize};
   padding: 12px 20px;
   border-radius: 6px;
   line-height: 1.5;
-  cursor: ${(props) =>
-    props.$disabled ? "not-allowed" : "default"};
+  cursor: ${(props) => (props.$disabled ? 'not-allowed' : 'default')};
   opacity: ${(props) => (props.$disabled ? 0.6 : 1)};
   transition: 0.3s;
 
@@ -31,9 +28,9 @@ const StyledText = styled.p<{
 
 const Text: React.FC<TextProps> = ({
   text,
-  color = "black",
-  backgroundColor = "lightblue",
-  fontSize = "16px",
+  color = 'black',
+  backgroundColor = 'lightblue',
+  fontSize = '16px',
   disabled = false,
 }) => {
   return (

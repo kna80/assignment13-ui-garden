@@ -1,23 +1,23 @@
-import type { Meta, StoryObj } from "@storybook/react-webpack5";
-import { fn } from "storybook/test";
-import Label from "./Label";
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import { fn } from 'storybook/test';
+import Label from './Label';
 
 const meta = {
-  title: "Components/Label",
+  title: 'Components/Label',
   component: Label,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
   },
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     text: {
-      control: "text",
+      control: 'text',
     },
     backgroundColor: {
-      control: "color",
+      control: 'color',
     },
     disabled: {
-      control: "boolean",
+      control: 'boolean',
     },
   },
   args: {
@@ -31,16 +31,16 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    text: "Hello Label",
-    backgroundColor: "blue",
+    text: 'Hello Label',
+    backgroundColor: 'blue',
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    text: "Disabled Label",
-    backgroundColor: "blue",
+    text: 'Disabled Label',
+    backgroundColor: 'blue',
     disabled: true,
   },
 };

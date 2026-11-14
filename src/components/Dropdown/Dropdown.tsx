@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import type { DropdownProps } from "./Dropdown.types";
+import React from 'react';
+import styled from 'styled-components';
+import type { DropdownProps } from './Dropdown.types';
 
 const DropdownContainer = styled.div`
   display: flex;
@@ -43,8 +43,8 @@ const StyledSelect = styled.select<{
 const Dropdown: React.FC<DropdownProps> = ({
   label,
   options,
-  backgroundColor = "white",
-  textColor = "black",
+  backgroundColor = 'white',
+  textColor = 'black',
   disabled = false,
   onChange,
 }) => {

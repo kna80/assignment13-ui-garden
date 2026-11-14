@@ -1,1 +1,1 @@
-import "./components/Table/Table.tests";
+import './components/Table/Table.tests';

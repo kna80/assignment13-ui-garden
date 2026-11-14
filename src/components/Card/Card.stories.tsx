@@ -1,31 +1,31 @@
-import type { Meta, StoryObj } from "@storybook/react-webpack5";
-import Card from "./Card";
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import Card from './Card';
 
 const meta = {
-  title: "Components/Card",
+  title: 'Components/Card',
   component: Card,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
   },
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     title: {
-      control: "text",
+      control: 'text',
     },
     description: {
-      control: "text",
+      control: 'text',
     },
     imageUrl: {
-      control: "text",
+      control: 'text',
     },
     backgroundColor: {
-      control: "color",
+      control: 'color',
     },
     textColor: {
-      control: "color",
+      control: 'color',
     },
     disabled: {
-      control: "boolean",
+      control: 'boolean',
     },
   },
 } satisfies Meta<typeof Card>;
@@ -36,22 +36,22 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    title: "React Card",
-    description: "A reusable card component built with React.",
-    imageUrl: "https://picsum.photos/400/250",
-    backgroundColor: "white",
-    textColor: "black",
+    title: 'React Card',
+    description: 'A reusable card component built with React.',
+    imageUrl: 'https://picsum.photos/400/250',
+    backgroundColor: 'white',
+    textColor: 'black',
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    title: "Disabled Card",
-    description: "This card is currently disabled.",
-    imageUrl: "https://picsum.photos/400/250",
-    backgroundColor: "white",
-    textColor: "black",
+    title: 'Disabled Card',
+    description: 'This card is currently disabled.',
+    imageUrl: 'https://picsum.photos/400/250',
+    backgroundColor: 'white',
+    textColor: 'black',
     disabled: true,
   },
 };

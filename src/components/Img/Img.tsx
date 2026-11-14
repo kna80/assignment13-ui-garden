@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import type { ImgProps } from "./Img.types";
+import React from 'react';
+import styled from 'styled-components';
+import type { ImgProps } from './Img.types';
 
 const ImageWrapper = styled.div<{
   $backgroundColor: string;
@@ -10,11 +10,9 @@ const ImageWrapper = styled.div<{
   padding: 10px;
   border-radius: 8px;
 
-  background-color: ${(props) =>
-    props.$disabled ? "grey" : props.$backgroundColor};
+  background-color: ${(props) => (props.$disabled ? 'grey' : props.$backgroundColor)};
 
-  cursor: ${(props) =>
-    props.$disabled ? "not-allowed" : "default"};
+  cursor: ${(props) => (props.$disabled ? 'not-allowed' : 'default')};
 
   opacity: ${(props) => (props.$disabled ? 0.6 : 1)};
 
@@ -38,9 +36,9 @@ const StyledImage = styled.img<{
 const Img: React.FC<ImgProps> = ({
   src,
   alt,
-  width = "250px",
-  height = "180px",
-  backgroundColor = "lightblue",
+  width = '250px',
+  height = '180px',
+  backgroundColor = 'lightblue',
   disabled = false,
 }) => {
   return (
@@ -50,12 +48,7 @@ const Img: React.FC<ImgProps> = ({
       aria-disabled={disabled}
       data-testid="image-wrapper"
     >
-      <StyledImage
-        src={src}
-        alt={alt}
-        $width={width}
-        $height={height}
-      />
+      <StyledImage src={src} alt={alt} $width={width} $height={height} />
     </ImageWrapper>
   );
 };

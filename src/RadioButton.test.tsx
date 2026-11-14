@@ -1,1 +1,1 @@
-import "./components/RadioButton/RadioButton.tests";
+import './components/RadioButton/RadioButton.tests';

@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import type { CardProps } from "./Card.types";
+import React from 'react';
+import styled from 'styled-components';
+import type { CardProps } from './Card.types';
 
 const StyledCard = styled.article<{
   $backgroundColor: string;
@@ -13,14 +13,11 @@ const StyledCard = styled.article<{
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
-  background-color: ${(props) =>
-    props.$disabled ? "grey" : props.$backgroundColor};
+  background-color: ${(props) => (props.$disabled ? 'grey' : props.$backgroundColor)};
 
-  color: ${(props) =>
-    props.$disabled ? "white" : props.$textColor};
+  color: ${(props) => (props.$disabled ? 'white' : props.$textColor)};
 
-  cursor: ${(props) =>
-    props.$disabled ? "not-allowed" : "default"};
+  cursor: ${(props) => (props.$disabled ? 'not-allowed' : 'default')};
 
   opacity: ${(props) => (props.$disabled ? 0.6 : 1)};
 
@@ -55,8 +52,8 @@ const Card: React.FC<CardProps> = ({
   title,
   description,
   imageUrl,
-  backgroundColor = "white",
-  textColor = "black",
+  backgroundColor = 'white',
+  textColor = 'black',
   disabled = false,
 }) => {
   return (

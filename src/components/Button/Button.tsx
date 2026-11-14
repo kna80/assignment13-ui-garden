@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { ButtonProps } from "./Button.types";
+import React from 'react';
+import styled from 'styled-components';
+import { ButtonProps } from './Button.types';
 
 const StyledButton = styled.button<{
   $backgroundColor: string;
@@ -32,16 +32,12 @@ const StyledButton = styled.button<{
 
 const Button: React.FC<ButtonProps> = ({
   label,
-  backgroundColor = "blue",
+  backgroundColor = 'blue',
   disabled = false,
   onClick,
 }) => {
   return (
-    <StyledButton
-      $backgroundColor={backgroundColor}
-      disabled={disabled}
-      onClick={onClick}
-    >
+    <StyledButton $backgroundColor={backgroundColor} disabled={disabled} onClick={onClick}>
       {label}
     </StyledButton>
   );

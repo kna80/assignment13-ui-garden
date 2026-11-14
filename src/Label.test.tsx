@@ -1,1 +1,1 @@
-import "./components/Label/Label.tests";
+import './components/Label/Label.tests';

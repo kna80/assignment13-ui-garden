@@ -1,1 +1,1 @@
-import "./components/Card/Card.tests";
+import './components/Card/Card.tests';

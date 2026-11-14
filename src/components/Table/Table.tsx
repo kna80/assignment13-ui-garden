@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import type { TableProps } from "./Table.types";
+import React from 'react';
+import styled from 'styled-components';
+import type { TableProps } from './Table.types';
 
 const TableContainer = styled.div`
   width: 100%;
@@ -16,14 +16,11 @@ const StyledTable = styled.table<{
   width: 100%;
   border-collapse: collapse;
 
-  background-color: ${(props) =>
-    props.$disabled ? "grey" : props.$backgroundColor};
+  background-color: ${(props) => (props.$disabled ? 'grey' : props.$backgroundColor)};
 
-  color: ${(props) =>
-    props.$disabled ? "white" : props.$textColor};
+  color: ${(props) => (props.$disabled ? 'white' : props.$textColor)};
 
-  cursor: ${(props) =>
-    props.$disabled ? "not-allowed" : "default"};
+  cursor: ${(props) => (props.$disabled ? 'not-allowed' : 'default')};
 
   opacity: ${(props) => (props.$disabled ? 0.6 : 1)};
 
@@ -57,9 +54,9 @@ const StyledTable = styled.table<{
 const Table: React.FC<TableProps> = ({
   headers,
   rows,
-  footer = "End of Table",
-  backgroundColor = "white",
-  textColor = "black",
+  footer = 'End of Table',
+  backgroundColor = 'white',
+  textColor = 'black',
   disabled = false,
 }) => {
   return (

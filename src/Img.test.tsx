@@ -1,1 +1,1 @@
-import "./components/Img/Img.tests";
+import './components/Img/Img.tests';
