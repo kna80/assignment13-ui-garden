@@ -1,38 +1,132 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7ff;
+  color: #1f2937;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-container {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.app-header {
+  padding: 60px 24px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #4338ca, #7c3aed, #db2777);
 }
 
-.App-link {
-  color: #61dafb;
+.app-header h1 {
+  font-size: clamp(36px, 6vw, 58px);
+  margin: 15px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app-header p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.component-count {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.intro-section {
+  text-align: center;
+  margin: 45px 0 30px;
+}
+
+.intro-section h2 {
+  font-size: 30px;
+}
+
+.intro-section p {
+  color: #64748b;
+}
+
+.component-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.demo-card {
+  min-width: 0;
+  padding: 28px;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 24px rgba(30, 41, 59, 0.06);
+  overflow-wrap: anywhere;
+}
+
+.demo-card h2 {
+  color: #4338ca;
+  margin-top: 0;
+}
+
+.demo-card h3 {
+  margin-top: 28px;
+  font-size: 15px;
+  color: #64748b;
+}
+
+.demo-card p {
+  line-height: 1.6;
+}
+
+.result {
+  padding: 10px 14px;
+  margin-top: 16px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.demo-card img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+  color: #64748b;
+  border-top: 1px solid #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .component-grid {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+
+  .app-container {
+    padding: 12px;
+  }
+
+  .app-header {
+    padding: 40px 18px;
+  }
+
+  .demo-card {
+    padding: 20px;
   }
 }
