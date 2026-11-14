@@ -1,18 +1,25 @@
-FROM node:20-alpine AS build
+# Stage 1: Build React application
+FROM node:22-alpine AS build
 
 WORKDIR /app
 
 COPY package*.json ./
+
 RUN npm ci
 
 COPY . .
+
 RUN npm run build
 
+# Stage 2: Serve production build
 FROM nginx:alpine
-WORKDIR /Kaur_Khushdeep_ui_garden
+
+WORKDIR /kaur_khushdeep_ui_garden_build_checks
 
 COPY --from=build /app/build /usr/share/nginx/html
-RUN sed -i 's/listen       80;/listen       8083;/' /etc/nginx/conf.d/default.conf
-EXPOSE 8083
+
+RUN sed -i 's/listen       80;/listen       8018;/' /etc/nginx/conf.d/default.conf
+
+EXPOSE 8018
 
 CMD ["nginx", "-g", "daemon off;"]
