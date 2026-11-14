@@ -105,7 +105,7 @@ Runs automated component tests:
 npm run test:ci
 ```
 
-The project contains 10 test suites and 19 automated tests.
+The project contains 10 test suites and 20 automated tests.
 
 ## Husky Pre-Commit Hooks
 
